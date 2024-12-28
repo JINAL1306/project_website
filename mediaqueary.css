@@ -6,6 +6,12 @@
   .campus {
     height: 200px;
   }
+  .campus h1 {
+    font-size: 22px;
+  }
+  .campus p {
+    font-size: 14px;
+  }
 }
 @media(min-width:380px){
   /* ----section-three---- */
