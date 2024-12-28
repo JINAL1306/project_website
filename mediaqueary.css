@@ -3,6 +3,9 @@
   .campus .row {
     visibility: hidden;
   }
+  .campus {
+    height: 200px;
+  }
 }
 @media(min-width:380px){
   /* ----section-three---- */
