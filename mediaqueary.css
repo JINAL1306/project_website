@@ -1,4 +1,9 @@
 
+@media(min-width:345px){
+  .campus .row {
+    visibility: hidden;
+  }
+}
 @media(min-width:380px){
   /* ----section-three---- */
   .offer-card {
