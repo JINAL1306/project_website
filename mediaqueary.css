@@ -1,17 +1,53 @@
 
-@media(min-width:345px){
+@media(min-width:350px){
+  /* ----section-three---- */
+  .offer-card {
+    height: 520px;
+  }
+  .offer-card .offer-info p {
+    font-size: 14px;
+  }
+  /*section-four */
+  .section-four {
+    height: 1150px;
+  }
+  .trending-product .trending-product-two h1 {
+    font-size: 30px;
+  }
+  /* campus-section */
   .campus .row {
     visibility: hidden;
   }
-  .campus {
-    height: 250px;
-  }
   .campus h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
   .campus p {
-    font-size: 14px;
+    font-size: 16px;
   }
+  .campus {
+    height: 200px;
+  }
+  .brand {
+    height: 550px;
+  }
+  .brand img {
+    height: 120px;
+  }
+  /* ----footer---- */
+  footer .footer-heading {
+    visibility: hidden;
+  }
+  .contact-icon i {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    }
+    footer nav ul li {
+    font-size: 18px;
+    } 
+    .pera p {
+    font-size: 14px;
+    }
 }
 @media(min-width:380px){
   /* ----section-three---- */
