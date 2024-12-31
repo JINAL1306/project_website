@@ -25,8 +25,9 @@
     --tertiary-text-color:white;
     --primary-text-color:rgb(135, 162, 67); 
     --secondary-text-color:white;
-    --bg-primary:black;
-    --bg-secondary:black;
+    --bg-primary:rgb(60, 60, 60);
+    --bg-secondary:rgb(60, 60, 60);
+    --bcg-color:rgb(60, 60, 60);
 
 }
 
