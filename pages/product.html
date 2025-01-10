@@ -54,7 +54,7 @@
             >PRODUCTS
           </a>
           <a
-            href="#pricing"
+            href="pricing"
             class="block md:inline-block text-teal-900 hover:text-green-500 px-3 py-3 border-b-2 hover:border-green-900"
             >PRICING
           </a>
@@ -96,7 +96,7 @@
       </nav>
     </header>
     <section class="flex flex-wrap">
-    <div class="cards flex flex-wrap gap-3 m-3 w-1/2">
+    <div class="cards flex justify-around flex-wrap gap-3 m-3">
       <!-- first card  -->
       <div class="card w-fit mx-4">
         <div
@@ -387,11 +387,13 @@
 
     <div class="cart grow min-h-10 border-2 rounded-md rounded-md">
       <h1 class="w-full bg-lime-800 text-center text-white text-2xl">Cart</h1>
-      <div class="items-list flex flex-col gap-3"></div>
+      <div class="items-list flex flex-row gap-3 sm:flex-col"></div>
     </div>
   </section>
-  </body>
+</body>
+
   <script>
+    
    const searchBox = document.querySelector(".search-box");
       const searchBtn = document.querySelector(".search-btn");
       const search = document.querySelector(".search");
@@ -425,5 +427,22 @@
           itemList.append(newCard);
         }
       });
-  </script>
+      // navbar
+    document.getElementById("hamburger").onclick = function toggleMenu() {
+        const navToggle = document.getElementsByClassName("toggle");
+        for (let i = 0; i < navToggle.length; i++) {
+          navToggle.item(i).classList.toggle("hidden");
+        }
+      };
+      // dark theme
+      let icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "img/sun.png";
+        } else {
+          icon.src = "img/moon.png";
+        }
+      };
+    </script>
 </html>

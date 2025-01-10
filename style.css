@@ -19,7 +19,6 @@
     --font-family-secondary:"Playfair Display", serif;
     --bg-primary:rgb(242, 241, 237);
     --bg-secondary:rgb(255, 255, 255);
-    
 }
 .dark-theme {
     --tertiary-text-color:white;
@@ -28,14 +27,10 @@
     --bg-primary:rgb(60, 60, 60);
     --bg-secondary:rgb(60, 60, 60);
     --bcg-color:rgb(60, 60, 60);
-
 }
-
-
 body {
     background-image: url(img/body-bg.jpg);
     background-color: var(--bg-primary);
-    
 }
 /* =======navbar====== */
 header {
@@ -100,7 +95,7 @@ header nav #icon {
 .product-item .item-one i:hover {
     color:var(--primary-text-color);
     background-color:var(--secondary-text-color);
-    }
+}
 /* ======item-two===== */
 .product-item .item-two {
     text-align: center;
@@ -109,7 +104,6 @@ header nav #icon {
 .product-item .item-two img {
     margin: auto;
     transition: all 2000ms;
-
 }
 .product-item .item-two img:hover {
     transform: rotatey(180deg);
@@ -134,7 +128,7 @@ header nav #icon {
 .product-item .item-two i:hover {
     color:var(--primary-text-color);
     background-color:var(--secondary-text-color);
-    }
+}
 /* ======item-three===== */
 .product-item .item-three {
     text-align: center;
@@ -143,7 +137,6 @@ header nav #icon {
 .product-item .item-three img {
     margin: auto;
     transition: all 2000ms;
-
 }
 .product-item .item-three img:hover {
     transform: rotatey(180deg);
@@ -151,7 +144,6 @@ header nav #icon {
 .product-item .item-three h4 {
     margin: 10px;
     font-size: 20px;
-
 }
 .product-item .item-three i {
     height: 50px;
@@ -168,8 +160,6 @@ header nav #icon {
 color:var(--primary-text-color);
 background-color:var(--secondary-text-color);
 }
-
-
 /* ======item-four===== */
 .product-item .item-four {
     text-align: center;

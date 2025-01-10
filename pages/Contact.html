@@ -61,7 +61,7 @@
             >PRODUCTS
           </a>
           <a
-            href="#pricing"
+            href="pricing"
             class="block md:inline-block text-teal-900 hover:text-green-500 px-3 py-3 border-b-2 hover:border-green-900"
             >PRICING
           </a>
@@ -419,4 +419,13 @@ your Massage</textarea
     </footer>
     <!-- footer page end  -->
   </body>
+  <script>
+    // navbar
+    document.getElementById("hamburger").onclick = function toggleMenu() {
+      const navToggle = document.getElementsByClassName("toggle");
+      for (let i = 0; i < navToggle.length; i++) {
+        navToggle.item(i).classList.toggle("hidden");
+      }
+    };
+  </script>
 </html>
