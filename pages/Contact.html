@@ -24,6 +24,27 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    @keyframes ripple {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+  </style>
 
   <body>
     <header>
@@ -304,6 +325,101 @@
         </div>
       </div>
     </section>
+    <!-- contact-form start -->
+    <section class="loacation w-[90%] mx-auto mt-6">
+      <section class="border-2 border-green-400 rounded-lg">
+        <div class="max-w-7xl mx-auto py-2 px-2 sm:px-6 lg:py-10 lg:px-8">
+          <img src="/img/download.png" class="mx-auto" alt="" />
+          <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-extrabold text-gray-900 mt-[5px]">
+              CONTACT US
+            </h2>
+          </div>
+          <!-- form start -->
+          <div class="min-h-screen flex items-center justify-center w-full p-4">
+            <div
+              class="bg-white shadow-2xl rounded-xl px-8 py-6 max-w-md w-full transform transition-all duration-300 hover:scale-[1.01] animate-fade-in"
+            >
+              <h1 class="text-3xl font-bold text-center mb-8 text-lime-800">
+                CONTACT US FORM
+              </h1>
+              <form action="#" class="space-y-6">
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-indigo-900 mb-2"
+                  >
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="shadow-sm rounded-lg w-full px-4 py-2.5 border border-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-lime-300 transition-all duration-300"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="password"
+                    class="block text-sm font-medium text-indigo-900 mb-2"
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    type="number"
+                    id="password"
+                    class="shadow-sm rounded-lg w-full px-4 py-2.5 border border-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-lime-300 transition-all duration-300"
+                    placeholder="Enter your Number"
+                    required
+                  />
+                  <a
+                    href="https://tailwindflex.com/@nejaa-badr/forgot-password-form-2"
+                    class="inline-block mt-2 text-sm text-indigo-800 hover:text-blue-900 transition-colors duration-300"
+                  >
+                  </a>
+                </div>
+
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="remember"
+                      class="h-4 w-4 rounded border-gray-300 text-lime-800 focus:ring-lime-800 transition-colors duration-300"
+                      checked
+                    />
+                    <label
+                      for="remember"
+                      class="ml-2 block text-sm text-indigo-900"
+                    >
+                      Remember me
+                    </label>
+                  </div>
+                  <a
+                    href="https://tailwindflex.com/@nejaa-badr/registration-form"
+                    class="text-sm text-indigo-800 hover:text-blue-900 transition-colors duration-300"
+                  >
+                    Create Account
+                  </a>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-lime-800 hover:bg-lime-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-800 transform transition-all duration-300 hover:scale-[1.02]"
+                  onclick="handleLogin(event)"
+                >
+                  Login
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- form end -->
+        </div>
+      </section>
+    </section>
+    <!-- contact-form end -->
 
     <!-- Contact Us Section End -->
 
@@ -385,4 +501,5 @@
       }
     };
   </script>
+  <script src="contact-form.js"></script>
 </html>
