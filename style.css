@@ -20,14 +20,6 @@
     --bg-primary:rgb(242, 241, 237);
     --bg-secondary:rgb(255, 255, 255);
 }
-.dark-theme {
-    --tertiary-text-color:white;
-    --primary-text-color:rgb(135, 162, 67); 
-    --secondary-text-color:white;
-    --bg-primary:rgb(60, 60, 60);
-    --bg-secondary:rgb(60, 60, 60);
-    --bcg-color:rgb(60, 60, 60);
-}
 body {
     background-image: url(img/body-bg.jpg);
     background-color: var(--bg-primary);
@@ -483,8 +475,6 @@ color: var(--tertiary-text-color);
 }
 
 /* Campus Section End */
-
-
 /* =====section-eight====== */
 .section-eight {
     width: 90%;

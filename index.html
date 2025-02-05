@@ -95,7 +95,7 @@
           <a href="/form.validation.html">
           <i class="fa-solid fa-user"></i>
          </a>
-         <img src="img/moon.png" id="icon" alt="" />
+         <!-- <img src="img/moon.png" id="icon" alt="" /> -->
         </div>
       </nav>
     </header>
@@ -609,16 +609,6 @@
         const navToggle = document.getElementsByClassName("toggle");
         for (let i = 0; i < navToggle.length; i++) {
           navToggle.item(i).classList.toggle("hidden");
-        }
-      };
-      // dark theme
-      let icon = document.getElementById("icon");
-      icon.onclick = function () {
-        document.body.classList.toggle("dark-theme");
-        if (document.body.classList.contains("dark-theme")) {
-          icon.src = "img/sun.png";
-        } else {
-          icon.src = "img/moon.png";
         }
       };
       // load more 
